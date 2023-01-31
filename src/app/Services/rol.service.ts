@@ -13,9 +13,6 @@ export class RolService {
   constructor(private http: HttpClient) { }
 
   lista(): Observable<ResponseApi>{
-    console.log("Hola");
-    console.log(`${this.urlApi}/Lista`);
-    console.log("Adios");
     return this.http.get<ResponseApi>(`${this.urlApi}/Lista`);
   }
 
