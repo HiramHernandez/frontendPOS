@@ -10,20 +10,20 @@ import { DetalleVenta } from '../Interfaces/detalle-venta';
   providedIn: 'root'
 })
 export class VentaService {
-  private urlApi: string = `${environment.endpoint}\Venta`;
+  private urlApi: string = `${environment.endpoint}/Venta`;
   
   constructor(private http: HttpClient) { }
 
   registrar(request: Venta):Observable<ResponseApi>{
-    return this.http.post<ResponseApi>(`${this.urlApi}\Registar`, request);
+    return this.http.post<ResponseApi>(`${this.urlApi}/Registar`, request);
   }
 
   historial(buscarPor: string, numeroVenta: string, fechaInicio: string, fechaFin: string):Observable<ResponseApi>{
-    return this.http.get<ResponseApi>(`${this.urlApi}\Historial?buscarPor=${buscarPor}&numeroVenta=${numeroVenta}&fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`);
+    return this.http.get<ResponseApi>(`${this.urlApi}/Historial?buscarPor=${buscarPor}&numeroVenta=${numeroVenta}&fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`);
   }
 
   reporte(fechaInicio: string, fechaFin: string):Observable<ResponseApi>{
-    return this.http.get<ResponseApi>(`${this.urlApi}\ReportebuscarPor?fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`);
+    return this.http.get<ResponseApi>(`${this.urlApi}/ReportebuscarPor?fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`);
   }
 
   

@@ -8,12 +8,12 @@ import { ResponseApi } from '../Interfaces/response-api';
   providedIn: 'root'
 })
 export class RolService {
-  private urlApi: string = `${environment.endpoint}\Rol`;
+  private urlApi: string = `${environment.endpoint}/Rol`;
 
   constructor(private http: HttpClient) { }
 
   lista(): Observable<ResponseApi>{
-    return this.http.get<ResponseApi>(`${this.urlApi}\Lista`);
+    return this.http.get<ResponseApi>(`${this.urlApi}/Lista`);
   }
 
 }
