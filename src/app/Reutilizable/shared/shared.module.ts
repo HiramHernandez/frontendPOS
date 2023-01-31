@@ -59,7 +59,7 @@ import { Moment } from 'moment';
     MatDatepickerModule,
     MatNativeDateModule,
     MomentDateModule,
-    MatSidenavModule
+    MatSidenavModule,
   ],
   providers:[
     MatDatepickerModule,
