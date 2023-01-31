@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from "@angular/material/card";
 import { MatInputModule } from "@angular/material/input";
 import { MatSelectModule } from "@angular/material/select";
@@ -23,6 +23,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatSidenavModule } from "@angular/material/sidenav";
 
 import { MatNativeDateModule } from "@angular/material/core";
 import { MomentDateModule } from '@angular/material-moment-adapter';
@@ -36,7 +37,7 @@ import { Moment } from 'moment';
   exports: [
     CommonModule,
     ReactiveFormsModule,
-    HttpClient,
+    HttpClientModule,
     MatCardModule,
     MatInputModule,
     MatSelectModule,
@@ -57,7 +58,8 @@ import { Moment } from 'moment';
     MatAutocompleteModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MomentDateModule
+    MomentDateModule,
+    MatSidenavModule
   ],
   providers:[
     MatDatepickerModule,
