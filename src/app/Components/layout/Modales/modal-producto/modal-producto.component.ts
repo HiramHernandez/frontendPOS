@@ -56,7 +56,7 @@ export class ModalProductoComponent implements OnInit {
         idCategoria: this.datosProducto.idCategoria,
         stock: this.datosProducto.stock,
         precio: this.datosProducto.precio,
-        esActivo: parseInt(this.datosProducto.esActivo.toString())
+        esActivo: this.datosProducto.esActivo.toString()
       });
     }
   }
