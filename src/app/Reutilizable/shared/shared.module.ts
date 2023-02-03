@@ -36,6 +36,7 @@ import { Moment } from 'moment';
   ],
   exports: [
     CommonModule,
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     MatCardModule,
