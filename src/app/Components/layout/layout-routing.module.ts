@@ -13,8 +13,8 @@ const routes: Routes = [
     path: "", component: LayoutComponent,
     children:[
       {path: "dashboard", component: DashBoardComponent},
-      {path: "usuario", component: UsuarioComponent},
-      {path: "producto", component: ProductoComponent},
+      {path: "usuarios", component: UsuarioComponent},
+      {path: "productos", component: ProductoComponent},
       {path: "venta", component: VentaComponent},
       {path: "historial_venta", component: HistorialVentaComponent},
       {path: "reportes", component: ReporteComponent},
