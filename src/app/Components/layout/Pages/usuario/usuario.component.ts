@@ -32,7 +32,7 @@ export class UsuarioComponent implements OnInit, AfterViewInit {
           if(data.status)
             this.dataListaUsuarios.data = data.value;
           else
-              this._utilidadService.mostrarAlerta("No se encontrarón usuarios", "Opps!");
+              this._utilidadService.mostrarAlerta("No se encontrarón usuarios", "Oops!");
           },
         error: (e) => {
           console.log(e);

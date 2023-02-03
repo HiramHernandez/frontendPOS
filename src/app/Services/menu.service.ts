@@ -8,12 +8,13 @@ import { ResponseApi } from '../Interfaces/response-api';
   providedIn: 'root'
 })
 export class MenuService {
-  private urlApi: string = `${environment.endpoint}/Lista`;
+  private urlApi: string = `${environment.endpoint}`;
 
   constructor(private http: HttpClient) { }
 
   lista(idUsuario: number): Observable<ResponseApi>{
-    return this.http.get<ResponseApi>(`${this.urlApi}/Lista?idUsuario=${idUsuario}`);
+    http://localhost:5000/api/Menu/Lista/1?idUsuario=1
+    return this.http.get<ResponseApi>(`${this.urlApi}/Menu/Lista/${idUsuario}?idUsuario=${idUsuario}`);
   }
 
 }
